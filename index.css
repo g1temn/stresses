@@ -1,0 +1,196 @@
+:root {
+    /*background color for web page*/
+    --light-background: rgb(100, 200, 234);
+    /*background color for the first mode`s div*/
+    --first-div-background: rgb(252, 152, 3);
+    /*background color for the first mode`s div hover*/
+    --first-div-background-hover: rgb(255, 201, 119);
+    /*background color for the second mode`s div*/
+    --second-div-background: rgb(3, 252, 119);
+    /*background color for the second mode`s div hover*/
+    --second-div-background-hover: rgb(157, 255, 203);
+    /*background color for the third mode`s div*/
+    --third-div-background: rgb(177, 3, 252);
+    /*background color for the third mode`s div hover*/
+    --third-div-background-hover: rgb(217, 130, 255);
+    /*background color for the fourth mode`s div*/
+    --fourth-div-background: rgb(252, 3, 107);
+    /*background color for the fourth mode`s div hover*/
+    --fourth-div-background-hover: rgb(255, 106, 168);
+    /*background color for the scrollbar thumb*/
+    --scrollbar-background-color: rgb(0, 150, 200);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    font-weight: bold;
+}
+header{
+    background-color: var(--light-background);
+    width: 100%;
+    min-height: 20%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+header #header-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#header-content #question{
+    opacity: .7;
+}
+#header-content div{
+    font-size: 1rem;
+    text-decoration: underline;
+    opacity: .7;
+    transition: opacity;
+    transition-duration: .125s;
+}
+#header-content div:hover{
+    opacity: .9;
+}
+section{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 0;
+}
+section .reference{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: background-color;
+    transition-duration: .125s;
+}
+#reference-betton-mode1{
+    background-color: var(--first-div-background);
+}
+#reference-betton-mode1:hover{
+    background-color: var(--first-div-background-hover);
+}
+#reference-betton-mode2{
+    background-color: var(--second-div-background);
+}
+#reference-betton-mode2:hover{
+    background-color: var(--second-div-background-hover);
+}
+#reference-betton-mode3{
+    background-color: var(--third-div-background);
+}
+#reference-betton-mode3:hover{
+    background-color: var(--third-div-background-hover);
+}
+#reference-betton-list-of-the-words{
+    background-color: var(--fourth-div-background);
+}
+#reference-betton-list-of-the-words:hover{
+    background-color: var(--fourth-div-background-hover);
+}
+footer{
+    background-color: var(--light-background);
+    width: 100%;
+    min-height: 20%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+footer h3{
+    opacity: 0.7;
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+footer div i{
+    font-size: 2.5rem;
+    opacity: 0.7;
+    transition: opacity;
+    transition-duration: .125s;
+}
+footer div i:hover{
+    opacity: 1;
+}
+body::-webkit-scrollbar{
+    width: .7rem;
+}
+body::-webkit-scrollbar-track{
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: white;
+    background-color: var(--scrollbar-background-color);
+    border-radius: 1rem;
+    border: 3px solid white;
+}
+@media (max-width: 425px){  
+    #header-content div{
+        font-size: .8rem;
+    }
+    header{
+        font-size: 1rem;
+    }
+    footer{
+        font-size: 1rem;
+    }
+    footer div i{
+        font-size: 2rem;
+    }
+    section .reference{
+        font-size: 1.5rem;
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 768px){
+    section{
+        height: 160%;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+}
+}
+@media (min-width: 2200px){
+    #header-content div{
+        font-size: 1.5rem;
+    }
+    header{
+        font-size: 2rem;
+    }
+    footer{
+        font-size: 2rem;
+    }
+    footer div i{
+        font-size: 3rem;
+    }
+    section .reference{
+        font-size: 3rem;
+    }
+}

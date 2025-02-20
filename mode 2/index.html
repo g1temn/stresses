@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Mode 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer type="module"></script>
+    <script src="https://kit.fontawesome.com/3c558a7e03.js"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--container for specific counters-->
+    <div id="specific-counters-container">
+        <div class="specific-counter"
+             id="specific-counter-display-for-right-answers">0</div>
+        <div class="specific-counter"
+             id="specific-counter-display-for-wrong-answers">0</div>
+    </div>
+    <!--main window-->
+    <div id="main-window">
+        <div id="stopwatch-display">00:00:00</div>
+        <div id="counter-display">1/233</div>
+        <div id="buttons-container">
+            <button class="to-next-button"
+                    id="to-right-button">
+                <span class="emoji">👌</span>
+            </button>
+            <button class="to-next-button"
+                    id="to-wrong-button">
+                <span class="emoji">😭</span>
+            </button>
+        </div>
+        <div id="displayed-word"></div>
+    </div>
+    <!--final statistics-->
+    <div id="fianl-statistics-window">
+        <div id="congratulations-container"></div>
+        <div id="diagram-container">
+            <div id="correct-rectangle"></div>
+            <div id="incorrect-rectangle"></div>
+        </div>
+        <div id="right-percentage-display"></div>
+        <div id="spended-time-display"></div>
+        <div id="number-of-answers-container">
+            <div id="number-of-right-answers-display"
+                 title="Деталі..."></div>
+
+            <div id="number-of-wrong-answers-display"
+                 title="Деталі..."></div>
+        </div>
+        <div id="buttons-container">
+            <button id="exit-button">На головну</button>
+            <button id="restart-button">Пройти знову</button>
+        </div>
+    </div>
+    <!--detailed lists` containers with right/wrong answers-->
+    <!--list`s container with right answers-->
+    <div class="list-container"
+         id="right-words-list-container-window">
+        <div id="list-title-container">
+            Позначені як <span id="right-span-container">ПРАВИЛЬНІ</span>:
+        </div>
+        <div id="right-answers-display-window"></div>
+    </div>
+    <!--list`s container with wrong answers-->
+    <div class="list-container"
+         id="wrong-words-list-container-window">
+        <div id="list-title-container">
+            Позначені як <span id="wrong-span-container">НЕПРАВИЛЬНІ</span
+                >:</div>
+        <div id="wrong-answers-display-window"></div>
+    </div>
+</body>
+</html>

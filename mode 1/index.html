@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наголоси</title>
+    <!--js references-->
+    <script src="index.js" defer type="module"></script>
+    <script src="words.js" defer type="module"></script>
+    <!--icons references-->
+    <script src="https://kit.fontawesome.com/3c558a7e03.js" crossorigin="anonymous"></script>
+    <!--css references-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--tip above-->
+    <div class="tip"><i class="fa-solid fa-puzzle-piece"></i> Використовуйте "Space" та "S", щоб відповідно змінити слово та показати правильний наголос</div>
+    <!--controlers-->
+    <div id="controlers">
+        <i class="fa-solid fa-volume-xmark"
+           id="volumeButton"
+           title="Аудіосупровід ВИМКНЕНО"></i>
+        <i class="fa-solid fa-bell"
+           id="messageButton"
+           title="Надсилати нагадування ДОЗВОЛЕНО"></i>
+    </div>
+    <!--game interface-->
+    <div id="stopwatchDisplay"
+         title="Час практики:">
+         00:00:00</div>
+    <div id="counterDisplay">Переглянуто слів: 0</div>
+    <button>Наступне слово</button>
+    <p id="word"></p>
+    <p id="answer"></p>
+    <!--message-->
+    <div id="messageContainer">
+        <div id="displayedMessage">Було переглянуто 50 слів!</div>
+        <div id="submessage">Відпочиваємо?</div>
+        <div id="buttonContaier">
+            <button id="continueButton">Ні</button>
+            <button id="quitButton">Так</button>
+        </div>
+    </div>
+</body>
+</html>
