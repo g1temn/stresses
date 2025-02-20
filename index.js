@@ -20,7 +20,7 @@ const mode3Button = document.getElementById('reference-betton-mode3')
 const listOfTheWordButton = document.getElementById('reference-betton-list-of-the-words')
 
 mode1Button.addEventListener('click', () => {
-    open('/mode 1/index.html', '_self')
+    open('https://g1temn.github.io/mode1/', '_self')
 })
 mode2Button.addEventListener('click', () => {
     open('https://g1temn.github.io/mode2/', '_self')
