@@ -25,6 +25,9 @@ mode1Button.addEventListener('click', () => {
 mode2Button.addEventListener('click', () => {
     open('https://g1temn.github.io/mode2/', '_self')
 })
+mode3Button.addEventListener('click', () => {
+    open('https://g1temn.github.io/random-20-exam-mode/', '_self')
+})
 listOfTheWordButton.addEventListener('click', () => {
     open('https://osvita-ua.translate.goog/test/training/materialy-instrumenty/65116/?_x_tr_sl=uk&_x_tr_tl=ru&_x_tr_hl=ru&_x_tr_pto=sc', '_self')
 })
